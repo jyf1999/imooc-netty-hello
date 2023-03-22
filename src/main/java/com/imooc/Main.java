@@ -1,4 +1,6 @@
-package com.imooc;public class Main {
+package com.imooc;
+
+public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
