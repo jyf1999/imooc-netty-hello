@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="133e61ad-75ff-4411-9e87-f8e29270bedf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/Main.java" afterDir="false" />
+    <list default="true" id="133e61ad-75ff-4411-9e87-f8e29270bedf" name="Changes" comment="test commit">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/netty/HelloServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/netty/HelloServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +47,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679484530219</updated>
-      <workItem from="1679484531469" duration="2001000" />
+      <workItem from="1679484531469" duration="2182000" />
     </task>
+    <task id="LOCAL-00001" summary="test commit">
+      <created>1679487186452</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679487186452</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,5 +72,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
   </component>
 </project>

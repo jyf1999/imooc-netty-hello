@@ -14,16 +14,22 @@ public class HelloServer {
         NioEventLoopGroup bossGroup = new NioEventLoopGroup();
         NioEventLoopGroup workerGroup = new NioEventLoopGroup();
 
-        ServerBootstrap serverBootstrap = new ServerBootstrap();
-        serverBootstrap
-                .group(bossGroup, workerGroup)
-                .channel(NioServerSocketChannel.class)
-                .childHandler(new ChannelInitializer<NioSocketChannel>() {
-                    protected void initChannel(NioSocketChannel ch) {
-                    }
-                });
+        try{
+            ServerBootstrap serverBootstrap = new ServerBootstrap();
+            serverBootstrap
+                    .group(bossGroup, workerGroup)
+                    .channel(NioServerSocketChannel.class)
+                    .childHandler(new ChannelInitializer<NioSocketChannel>() {
+                        protected void initChannel(NioSocketChannel ch) {
+                        }
+                    });
 
-        ChannelFuture channelFuture =serverBootstrap.bind(8000).sync();
-        channelFuture.channel().closeFuture().sync();
+            ChannelFuture channelFuture =serverBootstrap.bind(8000).sync();
+            channelFuture.channel().closeFuture().sync();
+        } finally {
+            bossGroup.shutdownGracefully();
+            workerGroup.shutdownGracefully();
+        }
+
     }
 }
